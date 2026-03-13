@@ -1,0 +1,46 @@
+# Quickstart: Modern CRM Logistics Website (Static Next.js)
+
+## Prerequisites
+- Node.js 20 LTS or newer
+- npm 10+ (or pnpm/yarn equivalent)
+
+## 1. Install dependencies
+```bash
+npm install
+```
+
+## 2. Run local development server
+```bash
+npm run dev
+```
+- Open http://localhost:3000
+
+## 3. Required pages to validate
+- Landing page: /
+- Services/Features page: /services
+- About page: /about
+- FAQ page: /faq
+
+## 4. Build static output
+```bash
+npm run build
+```
+- Build must complete with static export enabled.
+
+## 5. Preview static output
+```bash
+npm run start
+```
+or serve the exported static assets with any static host/server.
+
+## 6. Validation checklist
+- Verify navigation works across all required pages.
+- Verify around 20 mocked logistics/client records render with sample-data labeling.
+- Verify mobile breakpoints (360px, 768px, 1280px) for layout integrity.
+- Verify keyboard navigation and visible focus states.
+- Verify unique title/meta per page and presence of robots/sitemap outputs.
+- Smoke test latest Chrome and Firefox.
+
+## 7. Deployment target
+- Any static hosting platform (for example: Azure Static Web Apps, Vercel static export, Netlify, GitHub Pages).
+- No database or backend runtime required.
