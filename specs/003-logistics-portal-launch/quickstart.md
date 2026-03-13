@@ -44,3 +44,15 @@ or serve the exported static assets with any static host/server.
 ## 7. Deployment target
 - Any static hosting platform (for example: Azure Static Web Apps, Vercel static export, Netlify, GitHub Pages).
 - No database or backend runtime required.
+
+## 8. Final Validation Pass Notes
+- Validation date: 2026-03-13
+- Environment: Node.js 20+, npm 10+, Windows
+- Executed checks:
+	- `npm install` completed without vulnerabilities
+	- `npm run lint` passed with no ESLint errors
+	- `npm run build` passed and exported static routes (`/`, `/services`, `/about`, `/faq`)
+	- `npm run verify:static` passed HTML/CSS presence, broken output checks, and metadata coverage checks
+	- `npm run dev` startup validated (auto-shifted from port 3000 because port already in use)
+	- `npm run start` static preview startup validated
+- Manual checklist artifacts created for browser smoke, responsive, accessibility, and performance reports under `tests/` for release sign-off.
