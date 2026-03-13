@@ -156,6 +156,13 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
+- [ ] TXXX [P] Run accessibility validation (semantic landmarks, keyboard navigation,
+  contrast checks)
+- [ ] TXXX [P] Run static site validation (HTML/CSS checks, broken links,
+  responsive viewport checks)
+- [ ] TXXX Verify SEO essentials (unique title/meta per page, canonical,
+  sitemap/robots when applicable)
+- [ ] TXXX Smoke test latest stable Chrome and Firefox before release
 
 ---
 
@@ -249,3 +256,5 @@ With multiple developers:
 - Commit after each task or logical group
 - Stop at any checkpoint to validate story independently
 - Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+- Include constitution-driven gate tasks when applicable (static-only architecture,
+  accessibility, performance, SEO, validation/compatibility).

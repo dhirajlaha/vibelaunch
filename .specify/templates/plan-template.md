@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Static-only architecture confirmed (no server-side runtime dependencies).
+- Accessibility baseline defined (semantic structure, keyboard access, contrast).
+- Performance budget defined with measurable page targets.
+- SEO essentials planned (title/meta/canonical, sitemap/robots where applicable).
+- Validation and compatibility checks planned (links, responsive, browser smoke tests).
 
 ## Project Structure
 

@@ -95,6 +95,16 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Static Website Quality Requirements *(mandatory for static-site features)*
+
+- **SWR-001**: Pages MUST be deployable as static assets without server-side runtime dependencies.
+- **SWR-002**: Pages MUST meet accessibility baseline requirements (semantic landmarks,
+  keyboard navigation, and WCAG 2.1 AA contrast).
+- **SWR-003**: Pages MUST include SEO essentials (unique title, meta description,
+  canonical where relevant).
+- **SWR-004**: Features MUST define measurable performance targets and validation checks
+  for responsive and cross-browser behavior.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]

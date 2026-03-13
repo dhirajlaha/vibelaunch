@@ -1,50 +1,91 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+- Version change: template -> 1.0.0
+- Modified principles:
+	- Principle 1 -> I. Static-Only Architecture
+	- Principle 2 -> II. Accessibility Baseline
+	- Principle 3 -> III. Performance Budget
+	- Principle 4 -> IV. SEO & Discoverability Essentials
+	- Principle 5 -> V. Validation & Compatibility
+- Added sections:
+	- Technical Constraints
+	- Delivery Workflow
+- Removed sections:
+	- None
+- Templates requiring updates:
+	- ✅ updated .specify/templates/plan-template.md
+	- ✅ updated .specify/templates/spec-template.md
+	- ✅ updated .specify/templates/tasks-template.md
+	- ⚠ pending .specify/templates/commands/*.md (directory not present)
+- Runtime guidance docs:
+	- ⚠ pending README.md / docs/quickstart.md (not present)
+- Deferred TODOs:
+	- None
+-->
+
+# Vibelaunch Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Static-Only Architecture
+All deliverables MUST compile to static assets (HTML, CSS, JS, images, fonts) that can
+be served from any static host without server-side runtime logic.
+No database, server API, or server-rendered dependency is allowed unless the
+constitution is amended.
+Rationale: keeps hosting simple, cost low, and deployment portable.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Accessibility Baseline
+Every page MUST use semantic HTML landmarks, keyboard-accessible interactions,
+and text contrast that meets WCAG 2.1 AA.
+Images conveying meaning MUST include meaningful alt text.
+Rationale: accessibility is a baseline quality requirement, not an enhancement.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Performance Budget
+Each page MUST target Core Web Vitals-friendly delivery by default:
+no blocking script in initial render path, optimized images, and minimized CSS/JS.
+Any exception MUST be documented in the feature plan with measurable trade-offs.
+Rationale: static sites must feel instant on common mobile networks.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. SEO & Discoverability Essentials
+Each public page MUST define a unique title and meta description and MUST provide
+canonical URL metadata when relevant.
+The site MUST include crawl guidance (`robots.txt`) and a sitemap when multiple
+public pages exist.
+Rationale: discoverability is a core requirement for a launch-ready static site.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Validation & Compatibility
+Changes MUST pass HTML/CSS validation (or equivalent lint checks), broken-link
+checks, and responsive verification for mobile and desktop breakpoints.
+Before release, maintainers MUST smoke-test in latest stable Chrome and Firefox.
+Rationale: correctness and cross-browser reliability prevent avoidable regressions.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technical Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Primary stack MUST remain static web technologies: HTML, CSS, JavaScript.
+- Build tooling is optional; if used, output MUST remain static-host compatible.
+- Third-party scripts MUST be minimized and justified in plan complexity notes.
+- Secrets MUST NOT be embedded in client-side code.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Delivery Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+1. Define page-level acceptance criteria, including accessibility and performance checks.
+2. Implement with progressive enhancement so core content works without JavaScript.
+3. Validate markup, links, metadata, and responsive behavior before review.
+4. Release only after constitution gate confirmation in plan/spec/tasks artifacts.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution supersedes conflicting local practices for this repository.
+Amendments require: (1) documented proposal, (2) explicit impact statement on
+templates/guides, and (3) approval by repository maintainers.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Versioning policy for this document uses Semantic Versioning:
+- MAJOR: incompatible governance or principle removals/redefinitions.
+- MINOR: new principle/section or materially expanded rule.
+- PATCH: wording clarification, typo fixes, or non-semantic edits.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Compliance review expectations:
+- Every plan MUST complete the Constitution Check before implementation begins.
+- Every spec MUST include measurable outcomes that map to applicable principles.
+- Every task list MUST include verification tasks for applicable constitution gates.
+
+**Version**: 1.0.0 | **Ratified**: 2026-03-13 | **Last Amended**: 2026-03-13
