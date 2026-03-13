@@ -11,12 +11,12 @@
 
 **Purpose**: Project initialization and base static-site scaffolding
 
-- [ ] T001 Initialize Next.js project dependencies and scripts in package.json
-- [ ] T002 Configure static export output and image policy in next.config.ts
-- [ ] T003 [P] Configure TypeScript compiler options in tsconfig.json
-- [ ] T004 [P] Configure linting rules for app and content modules in eslint.config.mjs
-- [ ] T005 [P] Create global visual tokens and baseline responsive styles in styles/globals.css
-- [ ] T006 Create root layout shell with base metadata defaults in app/layout.tsx
+- [x] T001 Initialize Next.js project dependencies and scripts in package.json
+- [x] T002 Configure static export output and image policy in next.config.ts
+- [x] T003 [P] Configure TypeScript compiler options in tsconfig.json
+- [x] T004 [P] Configure linting rules for app and content modules in eslint.config.mjs
+- [x] T005 [P] Create global visual tokens and baseline responsive styles in styles/globals.css
+- [x] T006 Create root layout shell with base metadata defaults in app/layout.tsx
 
 ---
 
@@ -26,18 +26,18 @@
 
 **CRITICAL**: No user story implementation should start before this phase completes
 
-- [ ] T007 Create content entity types and validation helpers in content/types.ts
-- [ ] T008 [P] Seed service feature content collection in content/services.ts
-- [ ] T009 [P] Seed about narrative content collection in content/about.ts
-- [ ] T010 [P] Seed FAQ item content collection in content/faq.ts
-- [ ] T011 [P] Seed 20 mocked logistics/client records in content/logistics-records.ts
-- [ ] T012 Implement global site navigation component in components/navigation/site-nav.tsx
-- [ ] T013 [P] Implement shared section layout component in components/sections/section-shell.tsx
-- [ ] T014 [P] Implement reusable logistics records table component in components/records/logistics-records-table.tsx
-- [ ] T015 Add robots crawl guidance file in public/robots.txt
-- [ ] T016 Add sitemap baseline for required routes in public/sitemap.xml
-- [ ] T017 Implement shared per-page metadata helper in app/metadata.ts
-- [ ] T018 Implement keyboard-focus and accessibility utility styles in styles/globals.css
+- [x] T007 Create content entity types and validation helpers in content/types.ts
+- [x] T008 [P] Seed service feature content collection in content/services.ts
+- [x] T009 [P] Seed about narrative content collection in content/about.ts
+- [x] T010 [P] Seed FAQ item content collection in content/faq.ts
+- [x] T011 [P] Seed 20 mocked logistics/client records in content/logistics-records.ts
+- [x] T012 Implement global site navigation component in components/navigation/site-nav.tsx
+- [x] T013 [P] Implement shared section layout component in components/sections/section-shell.tsx
+- [x] T014 [P] Implement reusable logistics records table component in components/records/logistics-records-table.tsx
+- [x] T015 Add robots crawl guidance file in public/robots.txt
+- [x] T016 Add sitemap baseline for required routes in public/sitemap.xml
+- [x] T017 Implement shared per-page metadata helper in app/metadata.ts
+- [x] T018 Implement keyboard-focus and accessibility utility styles in styles/globals.css
 
 **Checkpoint**: Foundation ready for independent user story delivery
 
@@ -49,12 +49,12 @@
 
 **Independent Test**: Open `/` as a first-time visitor and confirm clear value proposition above the fold, visible feature highlights, and direct navigation to deeper pages.
 
-- [ ] T019 [P] [US1] Build landing hero section component in components/sections/landing-hero.tsx
-- [ ] T020 [P] [US1] Build landing feature highlights component in components/sections/feature-highlights.tsx
-- [ ] T021 [US1] Compose landing page route with hero and highlights in app/page.tsx
-- [ ] T022 [US1] Add landing-specific title, description, and canonical metadata in app/page.tsx
-- [ ] T023 [US1] Add primary CTA and deep-link navigation blocks in app/page.tsx
-- [ ] T024 [US1] Add landing page independent validation checklist in tests/e2e/landing-manual-checklist.md
+- [x] T019 [P] [US1] Build landing hero section component in components/sections/landing-hero.tsx
+- [x] T020 [P] [US1] Build landing feature highlights component in components/sections/feature-highlights.tsx
+- [x] T021 [US1] Compose landing page route with hero and highlights in app/page.tsx
+- [x] T022 [US1] Add landing-specific title, description, and canonical metadata in app/page.tsx
+- [x] T023 [US1] Add primary CTA and deep-link navigation blocks in app/page.tsx
+- [x] T024 [US1] Add landing page independent validation checklist in tests/e2e/landing-manual-checklist.md
 
 **Checkpoint**: User Story 1 is independently functional and demo-ready
 
@@ -66,11 +66,11 @@
 
 **Independent Test**: Open `/services` and verify distinct service entries with clear purpose, business value, and readable long-form content on mobile and desktop.
 
-- [ ] T025 [P] [US2] Build service card component for capability rendering in components/sections/service-card.tsx
-- [ ] T026 [US2] Implement services/features page using embedded content in app/services/page.tsx
-- [ ] T027 [US2] Add services page title, description, and canonical metadata in app/services/page.tsx
-- [ ] T028 [US2] Implement long-content readability and wrapping safeguards in styles/globals.css
-- [ ] T029 [US2] Add services page independent validation checklist in tests/e2e/services-manual-checklist.md
+- [x] T025 [P] [US2] Build service card component for capability rendering in components/sections/service-card.tsx
+- [x] T026 [US2] Implement services/features page using embedded content in app/services/page.tsx
+- [x] T027 [US2] Add services page title, description, and canonical metadata in app/services/page.tsx
+- [x] T028 [US2] Implement long-content readability and wrapping safeguards in styles/globals.css
+- [x] T029 [US2] Add services page independent validation checklist in tests/e2e/services-manual-checklist.md
 
 **Checkpoint**: User Story 2 is independently functional and verifiable
 
@@ -82,17 +82,17 @@
 
 **Independent Test**: Open `/about` and `/faq`, confirm contextual trust messaging, FAQ discoverability, and display of around 20 mocked records with no real customer data.
 
-- [ ] T030 [P] [US3] Build about narrative section component in components/sections/about-narrative.tsx
-- [ ] T031 [P] [US3] Build FAQ accordion/list component in components/sections/faq-accordion.tsx
-- [ ] T032 [P] [US3] Build mock records showcase component in components/records/mock-records-showcase.tsx
-- [ ] T033 [US3] Implement about page with narrative and records preview in app/about/page.tsx
-- [ ] T034 [US3] Implement FAQ page with grouped questions and answers in app/faq/page.tsx
-- [ ] T035 [US3] Add About page title, description, and canonical tags in app/about/page.tsx
-- [ ] T036 [US3] Add FAQ page metadata and canonical tags in app/faq/page.tsx
-- [ ] T037 [US3] Implement 18-22 record fallback and sample dataset preview label in components/records/mock-records-showcase.tsx
-- [ ] T038 [US3] Add standalone entry-point context copy for direct page landings in app/about/page.tsx
-- [ ] T039 [US3] Add standalone entry-point context copy for direct page landings in app/faq/page.tsx
-- [ ] T040 [US3] Add user story 3 independent validation checklist in tests/e2e/trust-content-manual-checklist.md
+- [x] T030 [P] [US3] Build about narrative section component in components/sections/about-narrative.tsx
+- [x] T031 [P] [US3] Build FAQ accordion/list component in components/sections/faq-accordion.tsx
+- [x] T032 [P] [US3] Build mock records showcase component in components/records/mock-records-showcase.tsx
+- [x] T033 [US3] Implement about page with narrative and records preview in app/about/page.tsx
+- [x] T034 [US3] Implement FAQ page with grouped questions and answers in app/faq/page.tsx
+- [x] T035 [US3] Add About page title, description, and canonical tags in app/about/page.tsx
+- [x] T036 [US3] Add FAQ page metadata and canonical tags in app/faq/page.tsx
+- [x] T037 [US3] Implement 18-22 record fallback and sample dataset preview label in components/records/mock-records-showcase.tsx
+- [x] T038 [US3] Add standalone entry-point context copy for direct page landings in app/about/page.tsx
+- [x] T039 [US3] Add standalone entry-point context copy for direct page landings in app/faq/page.tsx
+- [x] T040 [US3] Add user story 3 independent validation checklist in tests/e2e/trust-content-manual-checklist.md
 
 **Checkpoint**: User Story 3 is independently functional and compliant with data-mocking constraints
 
@@ -102,15 +102,15 @@
 
 **Purpose**: Final quality gates and release readiness across all stories
 
-- [ ] T041 [P] Add static-site verification script for HTML/CSS validation, broken links, and metadata coverage in scripts/verify-static-site.mjs
-- [ ] T042 [P] Add accessibility validation checklist and runbook in tests/accessibility/a11y-checklist.md
-- [ ] T043 [P] Add responsive viewport smoke checklist (360/768/1280) in tests/e2e/responsive-checklist.md
-- [ ] T048 Add measurable performance validation (Lighthouse/Web Vitals thresholds and report) in tests/e2e/performance-report.md
-- [ ] T044 Add browser smoke report template for Chrome and Firefox in tests/e2e/browser-smoke-report.md
-- [ ] T045 [P] Optimize and document production image assets in public/images/README.md
-- [ ] T046 Document static export deployment and local validation workflow in README.md
-- [ ] T049 Add enterprise modular platform readiness blueprint mapping (routes, content modules, future integration boundaries) in docs/blueprint-readiness.md
-- [ ] T047 Run quickstart validation (including performance and HTML/CSS checks) and record final pass notes in specs/003-logistics-portal-launch/quickstart.md
+- [x] T041 [P] Add static-site verification script for HTML/CSS validation, broken links, and metadata coverage in scripts/verify-static-site.mjs
+- [x] T042 [P] Add accessibility validation checklist and runbook in tests/accessibility/a11y-checklist.md
+- [x] T043 [P] Add responsive viewport smoke checklist (360/768/1280) in tests/e2e/responsive-checklist.md
+- [x] T048 Add measurable performance validation (Lighthouse/Web Vitals thresholds and report) in tests/e2e/performance-report.md
+- [x] T044 Add browser smoke report template for Chrome and Firefox in tests/e2e/browser-smoke-report.md
+- [x] T045 [P] Optimize and document production image assets in public/images/README.md
+- [x] T046 Document static export deployment and local validation workflow in README.md
+- [x] T049 Add enterprise modular platform readiness blueprint mapping (routes, content modules, future integration boundaries) in docs/blueprint-readiness.md
+- [x] T047 Run quickstart validation (including performance and HTML/CSS checks) and record final pass notes in specs/003-logistics-portal-launch/quickstart.md
 
 ---
 
@@ -186,3 +186,4 @@
 - All tasks follow strict checklist format: checkbox, ID, optional [P], optional [USx], action with file path.
 - Tasks are intentionally implementation-ready for direct execution by an LLM agent.
 - Automated tests are not mandated by spec; validation tasks satisfy independent testability requirements for each story.
+
