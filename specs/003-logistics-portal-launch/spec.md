@@ -77,6 +77,24 @@ A decision-maker reviews the about page and FAQ, and inspects mocked logistics/c
 - **FR-011**: When fewer than 20 mocked records are available, the system MUST display all available records and MUST not show empty placeholder rows.
 - **FR-012**: Long-form content (services and FAQ answers) MUST preserve readability across supported viewport sizes without layout breakage.
 - **FR-013**: Each page (Landing, Services/Features, About, FAQ) MUST be directly accessible and understandable as a standalone entry point.
+- **FR-014**: The logistics records section MUST display a searchable and filterable record list, allowing users to locate entries by status, client name, or shipment ID.
+- **FR-015**: Selecting a logistics record from the list MUST open a detail view showing all record attributes, status, and related information.
+- **FR-016**: The records list MUST show key attributes (Record ID, Client Name, Category, Status) at a glance without requiring users to open individual records.
+- **FR-017**: A status filter MUST be available on the records list; applying it MUST update results immediately without a full page reload.
+- **FR-018**: When no records match the applied filter, the system MUST display a distinct empty state that differentiates between "no records exist" and "no records match the current filter."
+
+### UX Requirements
+
+- **UXR-001**: The site MUST support full keyboard navigation across all interactive elements — navigation menus, record rows, filter controls, and detail view — with visible focus indicators.
+- **UXR-002**: All pages MUST meet WCAG 2.1 AA color contrast requirements; status badges on logistics records MUST convey state using both color and a visible text label (not color alone).
+- **UXR-003**: The navigation bar MUST be consistent and present on every page; users MUST be able to reach any primary page within two interactions from any starting page.
+- **UXR-004**: On mobile viewports (below 600px), the records list MUST adapt to a card-based layout showing only the highest-priority record fields to remain readable.
+- **UXR-005**: All interactive elements on touch devices MUST have a minimum tap target size of 44×44px with at least 8px spacing between adjacent targets.
+- **UXR-006**: Skeleton loading states MUST be shown for the records list and record detail view while data is being loaded, preventing blank content areas.
+- **UXR-007**: Error and empty states on the records list and detail view MUST include descriptive messages and actionable recovery steps (e.g., "Clear Filters" CTA).
+- **UXR-008**: Logistics record count and pagination controls MUST be visible and accessible when the records list exceeds a single page of results.
+- **UXR-009**: All UI text, labels, and messages MUST use plain language; technical identifiers MUST be paired with human-readable descriptions.
+
 
 ### Static Website Quality Requirements *(mandatory for static-site features)*
 
