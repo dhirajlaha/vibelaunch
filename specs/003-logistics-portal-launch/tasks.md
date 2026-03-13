@@ -87,7 +87,7 @@
 - [ ] T032 [P] [US3] Build mock records showcase component in components/records/mock-records-showcase.tsx
 - [ ] T033 [US3] Implement about page with narrative and records preview in app/about/page.tsx
 - [ ] T034 [US3] Implement FAQ page with grouped questions and answers in app/faq/page.tsx
-- [ ] T035 [US3] Add about and FAQ page metadata and canonical tags in app/about/page.tsx
+- [ ] T035 [US3] Add About page title, description, and canonical tags in app/about/page.tsx
 - [ ] T036 [US3] Add FAQ page metadata and canonical tags in app/faq/page.tsx
 - [ ] T037 [US3] Implement 18-22 record fallback and sample dataset preview label in components/records/mock-records-showcase.tsx
 - [ ] T038 [US3] Add standalone entry-point context copy for direct page landings in app/about/page.tsx
@@ -102,13 +102,15 @@
 
 **Purpose**: Final quality gates and release readiness across all stories
 
-- [ ] T041 [P] Add static-site verification script for links and metadata coverage in scripts/verify-static-site.mjs
+- [ ] T041 [P] Add static-site verification script for HTML/CSS validation, broken links, and metadata coverage in scripts/verify-static-site.mjs
 - [ ] T042 [P] Add accessibility validation checklist and runbook in tests/accessibility/a11y-checklist.md
 - [ ] T043 [P] Add responsive viewport smoke checklist (360/768/1280) in tests/e2e/responsive-checklist.md
+- [ ] T048 Add measurable performance validation (Lighthouse/Web Vitals thresholds and report) in tests/e2e/performance-report.md
 - [ ] T044 Add browser smoke report template for Chrome and Firefox in tests/e2e/browser-smoke-report.md
 - [ ] T045 [P] Optimize and document production image assets in public/images/README.md
 - [ ] T046 Document static export deployment and local validation workflow in README.md
-- [ ] T047 Run quickstart validation and record final pass notes in specs/003-logistics-portal-launch/quickstart.md
+- [ ] T049 Add enterprise modular platform readiness blueprint mapping (routes, content modules, future integration boundaries) in docs/blueprint-readiness.md
+- [ ] T047 Run quickstart validation (including performance and HTML/CSS checks) and record final pass notes in specs/003-logistics-portal-launch/quickstart.md
 
 ---
 
