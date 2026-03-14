@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out -l 3000",
+    "start": "npx serve out -s -l 3000",
     "lint": "next lint",
     "verify:static": "node scripts/verify-static-site.mjs"
   },
