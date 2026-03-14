@@ -118,6 +118,42 @@ A decision-maker reviews the about page and FAQ, and inspects mocked logistics/c
 - Contact workflows, authentication, and backend integrations are out of scope for this feature.
 - Non-critical visual effects may load after primary content when network quality is constrained.
 
+## ABP.IO Future Migration Blueprint
+
+This release remains static-only and does not run ABP.IO at runtime. To satisfy the
+"ABP.IO-ready solution blueprint" requirement, the following migration contract is defined.
+
+### Current to Future Mapping
+
+- Current static content modules under `content/` map to future ABP application contracts.
+- Current UI routes under `app/` map to future ABP HTTP API endpoints and application services.
+- Current mock record shape maps to future `LogisticsRecord` domain aggregate.
+
+### Planned ABP.IO Layer Mapping
+
+- Domain Layer:
+	- Define entities: `LogisticsRecord`, `ServiceFeature`, `FaqItem`, `BrandNarrativeBlock`.
+	- Define value objects/enums: `ShipmentType`, `RecordStatus`, `AccountTier`.
+	- Define domain services for logistics status transitions and validation rules.
+- Application Layer:
+	- Implement app services: `RecordsAppService`, `ServicesAppService`, `FaqAppService`.
+	- Expose DTOs mirroring current view model contracts used by the static site.
+	- Add query methods for search and status filtering equivalent to FR-014 and FR-017.
+- Infrastructure Layer:
+	- Add EF Core repositories and database mappings for the domain entities.
+	- Configure seeded demo data to preserve non-production sample behavior.
+	- Add integration adapters for future telemetry and export needs.
+- Presentation Layer:
+	- Expose HTTP API endpoints for list/detail/filter operations used by the records UI.
+	- Keep the current route model (`/`, `/services`, `/about`, `/faq`) as the public web surface.
+
+### Migration Gates
+
+- Gate 1: Constitution amendment approved to allow backend runtime.
+- Gate 2: ABP module skeleton generated and layered boundaries validated.
+- Gate 3: API contracts verified as backward-compatible with current UI expectations.
+- Gate 4: Static fallback behavior retained for read-only marketing pages.
+
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes

@@ -28,8 +28,8 @@
 - [x] User scenarios cover primary flows
 - [x] Feature meets measurable outcomes defined in Success Criteria
 - [x] No implementation details leak into specification
-- [x] UX requirements (UXR-001 to UXR-009) added and aligned with UX spec [005]
-- [x] Cross-reference to VibeLaunch UX Specification documented in spec
+- [x] UX requirements (UXR-001 to UXR-009) added directly in this feature scope
+- [x] UX validation checklist is documented under this feature folder
 
 ## Notes
 
@@ -40,9 +40,9 @@
 
 ## UX Specification Alignment
 
-- [x] Logistics portal persona (Marcus, Logistics Coordinator) defined in UX spec [005]
-- [x] End-to-end logistics portal user flow documented in UX spec [005] — User Story 5
-- [x] Wireframe descriptions for Records List (WF-006) and Record Detail (WF-007) captured in UX spec [005]
+- [x] Logistics portal persona and UX flow expectations are documented in this feature artifacts
+- [x] Records list and record detail behaviors are validated in UX QA checklist
+- [x] UX quality gates are tracked in specs/003-logistics-portal-launch/checklists/ux-qa-checklist.md
 - [x] Screen inventory entries SCR-016 and SCR-017 defined with routes and persona mapping
 - [x] WCAG 2.1 AA requirements referenced in UXR-001 and UXR-002
 - [x] Responsive design rules for logistics table/card adaptation referenced in UXR-004

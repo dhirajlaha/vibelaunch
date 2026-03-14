@@ -109,6 +109,29 @@ tests/
 **Structure Decision**: Use a single Next.js static web application with App Router,
 build-time embedded content, and static-host deployment output.
 
+## ABP.IO Future Migration Plan (Non-Blocking)
+
+This feature ships as static-only by constitution. ABP.IO support is captured as a
+future migration plan and is not implemented in this release.
+
+### Phase A: Foundation
+
+- Amend constitution to permit server runtime for ABP-based modules.
+- Scaffold ABP solution with Domain, Application, Infrastructure, and HttpApi layers.
+- Recreate current data types as ABP entities, DTOs, and enums.
+
+### Phase B: Contract Alignment
+
+- Implement records list, filter, and detail APIs matching FR-014 to FR-018 behavior.
+- Preserve route behavior and SEO metadata expectations defined in this feature.
+- Add sample-data seeding to keep non-production demos available.
+
+### Phase C: Progressive Cutover
+
+- Replace `content/*.ts` read models with API-backed data adapters.
+- Keep read-only static fallback for marketing pages where possible.
+- Validate parity using existing UX and QA checklists before full switch-over.
+
 ## Complexity Tracking
 
 > **Fill ONLY if Constitution Check has violations that must be justified**

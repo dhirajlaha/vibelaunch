@@ -45,7 +45,16 @@ or serve the exported static assets with any static host/server.
 - Any static hosting platform (for example: Azure Static Web Apps, Vercel static export, Netlify, GitHub Pages).
 - No database or backend runtime required.
 
-## 8. Final Validation Pass Notes
+## 8. ABP.IO Future Migration Note
+
+- Current state: static-only release with no ABP runtime in this feature.
+- Future state: ABP migration blueprint is documented in this feature artifacts.
+- Reference sections:
+	- `spec.md` -> "ABP.IO Future Migration Blueprint"
+	- `plan.md` -> "ABP.IO Future Migration Plan (Non-Blocking)"
+	- `research.md` -> "Decision 6: ABP.IO-ready blueprint posture"
+
+## 9. Final Validation Pass Notes
 - Validation date: 2026-03-13
 - Environment: Node.js 20+, npm 10+, Windows
 - Executed checks:

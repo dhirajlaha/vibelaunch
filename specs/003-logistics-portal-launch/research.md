@@ -30,6 +30,23 @@
 - Rationale: Enables straightforward migration into a modular enterprise backend later without changing current static deployment.
 - Alternatives considered: Designing only visual pages with no domain-ready schema (rejected due to migration friction).
 
+### ABP Migration Detail
+
+- Target architecture: ABP layered model (Domain, Application, Infrastructure, HttpApi).
+- Initial module split:
+	- `Logistics.Records` for record list/detail/filter use cases.
+	- `Logistics.Content` for services/about/faq managed content.
+- API parity targets:
+	- `GET /api/logistics/records` with status and search query options.
+	- `GET /api/logistics/records/{id}` for record detail.
+	- `GET /api/logistics/services`, `GET /api/logistics/faqs`, `GET /api/logistics/about`.
+- Data migration strategy:
+	- Convert static seed content in `content/` into ABP seed contributors.
+	- Preserve sample-data labeling to avoid production-data confusion.
+- Risk and mitigation:
+	- Risk: constitution conflict with backend runtime.
+	- Mitigation: explicit governance amendment before implementation.
+
 ## Decision 7: Validation and compatibility checks
 - Decision: Include link checking, responsive viewport checks, and Chrome/Firefox smoke tests in delivery workflow.
 - Rationale: Constitution mandates compatibility and verification gates before release.

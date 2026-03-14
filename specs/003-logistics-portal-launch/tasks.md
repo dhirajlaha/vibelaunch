@@ -114,6 +114,25 @@
 
 ---
 
+## Phase 7: UX Validation Alignment (FR-014 to FR-018, UXR-001 to UXR-009)
+
+**Purpose**: Implement and validate interactive records experience inside this feature scope.
+
+**Cross-reference**: See `specs/003-logistics-portal-launch/checklists/ux-qa-checklist.md` for the full UX QA gate list.
+
+- [x] T050 [P] Add "use client" directive and row-selection props (selectedRecordId, onSelectRecord) to components/records/logistics-records-table.tsx (FR-015, FR-016, UXR-001)
+- [x] T051 [P] Create RecordsFilteredView client component with search input, status filter, record count, empty state, and inline detail panel in components/records/records-filter-view.tsx (FR-014, FR-015, FR-017, FR-018, UXR-006, UXR-007, UXR-008)
+- [x] T052 [P] Update MockRecordsShowcase to delegate rendering to RecordsFilteredView in components/records/mock-records-showcase.tsx
+- [x] T053 [P] Add sr-only utility, filter bar, empty state, selectable row, and detail panel CSS in styles/globals.css (UXR-004, UXR-005)
+- [x] T054 Consolidate UX requirements in 003 spec and implementation tasks
+- [x] T055 Track UX validation tasks directly in 003 feature workflow
+- [x] T056 Create UX QA checklist covering all UXR-001 to UXR-009 gates in specs/003-logistics-portal-launch/checklists/ux-qa-checklist.md
+- [x] T057 Create .specify/templates/commands/README.md to resolve pending constitution sync item
+- [x] T058 Create docs/quickstart.md resolving pending constitution guidance doc
+- [x] T059 Create .github/workflows/static-deploy.yml CI pipeline for build, lint, and output verification
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
