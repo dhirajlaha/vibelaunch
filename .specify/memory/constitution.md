@@ -207,7 +207,7 @@ practice what the product preaches.
 
 ---
 
-## Governance
+## Versioning
 
 This constitution supersedes all conflicting local practices for this repository.
 Amendments require: (1) documented proposal with rationale, (2) explicit impact
